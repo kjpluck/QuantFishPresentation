@@ -6,10 +6,6 @@ void setup()
   textSize(40);
 }
 
-
-//315.98 414.24
-//-0.20 1.02
-
 float co2Min = 315.98;
 float co2Max = 414.24;
 
@@ -121,7 +117,7 @@ void drawAxis()
     
     line(100, height-100, 100, height-900);
     textAlign(RIGHT);
-    for(float temp = -0.1; temp <= 1.0; temp+=0.1)
+    for(float temp = -0.1; temp <= 1.1; temp+=0.1)
     {
       float tempNormalised = (temp - tempMin) / (tempMax - tempMin);
       float y = 100 + tempNormalised * 800;
